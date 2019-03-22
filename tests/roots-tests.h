@@ -24,4 +24,6 @@ TEST(rootsTest, less0)
 TEST(rootsTest, other)
 {
   ASSERT_EQ(equation(1,-6,5)->count, 2);
+  ASSERT_EQ(equation(1,-6,5)->x2, 5);
+  ASSERT_EQ(equation(1,-6,5)->x2, 1);    
 }
