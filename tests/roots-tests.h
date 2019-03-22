@@ -23,7 +23,6 @@ TEST(rootsTest, less0)
 
 TEST(rootsTest, other)
 {
-  ASSERT_EQ(equation(2,3,7)->count, 0);
   ASSERT_EQ(equation(1,-6,5)->count, 2);
   ASSERT_EQ(equation(1,-6,5)->count, 5);
   ASSERT_EQ(equation(1,-6,5)->count, 1);  
