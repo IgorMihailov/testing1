@@ -6,6 +6,7 @@ typedef struct
     double x1;
     double x2;
     int count;
+    int error;
 } roots;
 roots* equation(double a, double b,double c);
 
