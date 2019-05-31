@@ -23,7 +23,12 @@ TEST(rootsTest, less0)
 
 TEST(rootsTest, other)
 {
-  ASSERT_EQ(equation(1,-6,5)->count, 2);
-  ASSERT_EQ(equation(1,-6,5)->x1, 5);
-  ASSERT_EQ(equation(1,-6,5)->x2, 1);    
+    ASSERT_EQ(equation(1,-6,5)->count, 2);
+    ASSERT_EQ(equation(1,-6,5)->x1, 5);
+    ASSERT_EQ(equation(1,-6,5)->x2, 1);    
+}
+
+TEST(rootsTest, error)
+{
+    ASSERT_EQ(equation(0,2,7)->error, 1);
 }
