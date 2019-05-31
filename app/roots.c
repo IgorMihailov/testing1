@@ -6,6 +6,7 @@ roots* equation(double a, double b, double c)
 {
     static roots r;
     double D = b*b - 4*a*c;
+    
     if (D == 0)
     {
        r.x1 = -b/(2*a);
@@ -22,6 +23,11 @@ roots* equation(double a, double b, double c)
     if (D < 0)
     {
         r.count = 0;
+    }
+    
+    if (a == 0)
+    {
+        r.error = 1;
     }
     return &r;
 }
